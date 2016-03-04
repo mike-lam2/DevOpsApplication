@@ -14,7 +14,12 @@ echo "payload decoded\n";
 file_put_contents('logs/github.txt', print_r($payload, TRUE), FILE_APPEND);
 file_put_contents('/var/www/html/DevOpsApplication/github.txt', print_r($payload, TRUE), FILE_APPEND);
 
-echo $payload->ref+"\n";
+echo json_decode($_REQUEST['payload']);
+echo "\n";
+echo $payload;
+echo "\n";
+echo $payload->ref;
+echo "\n";
 
 if ($payload->ref === 'refs/heads/master')
 {
