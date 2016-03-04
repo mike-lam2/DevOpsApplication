@@ -2,7 +2,7 @@
 echo "received a push\n"; 
 try 
 {
-  $payload = json_decode($_REQUEST['payload']);
+  $payload = json_decode($_REQUEST['Payload']);
 }
 catch(Exception $e)
 {
@@ -14,7 +14,7 @@ echo "payload decoded\n";
 file_put_contents('logs/github.txt', print_r($payload, TRUE), FILE_APPEND);
 file_put_contents('/var/www/html/DevOpsApplication/github.txt', print_r($payload, TRUE), FILE_APPEND);
 
-echo json_decode($_REQUEST['payload']);
+echo json_decode($_REQUEST['Payload']);
 echo "\n";
 echo $payload;
 echo "\n";
