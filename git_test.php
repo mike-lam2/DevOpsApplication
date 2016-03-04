@@ -20,4 +20,4 @@ if ($payload->ref === 'refs/heads/master')
   // path to your site deployment script 
   exec('/var/www/html/DevOpsApplication/build.sh');
 }
-echo "push processed sucessful<p>";
+echo "push processed sucessful<p>"; 
