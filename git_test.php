@@ -1,6 +1,6 @@
 <?php
 echo "received a push\n"; 
-try
+try 
 {
   $payload = json_decode($_REQUEST['payload']);
 }
