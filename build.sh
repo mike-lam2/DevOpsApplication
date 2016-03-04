@@ -1,1 +1,3 @@
-sudo date >> /var/www/html/DevOpsApplication/WebContent/WEB-INF/hook.html
+sudo date >> /var/www/html/DevOpsApplication/date.txt
+sudo chmod a+r /var/www/html/DevOpsApplication/date.txt
+
