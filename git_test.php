@@ -14,17 +14,10 @@ echo "payload decoded\n";
 file_put_contents('logs/github.txt', print_r($payload, TRUE), FILE_APPEND);
 file_put_contents('/var/www/html/DevOpsApplication/github.txt', print_r($payload, TRUE), FILE_APPEND);
 
-echo $_REQUEST['Payload'];
-echo "\n";
-echo $payload;
-echo "\n";
-echo $payload->ref;
-echo "\n";
-
-if ($payload->ref === 'refs/heads/master')
-{
+//if ($payload->ref === 'refs/heads/master')
+//{
   echo "executing\n";
   // path to your site deployment script 
   exec('/var/www/html/DevOpsApplication/build.sh');
-}
+//}
 echo "push processed sucessful\n"; 
