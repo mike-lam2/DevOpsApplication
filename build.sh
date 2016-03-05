@@ -1,8 +1,8 @@
 cd /var/www/html/DevOpsApplication
-sudo git fetch --all
-sudo git reset --hard origin/master
-sudo chmod -R a+r ../DevOpsApplication
-sudo chmod -R a+w ../DevOpsApplication
-sudo chmod a+x ../DevOpsApplication/*.sh
-#11:21
+git fetch --all
+git reset --hard origin/master
+chmod -R a+r ../DevOpsApplication
+chmod -R a+w ../DevOpsApplication
+chmod a+x ../DevOpsApplication/*.sh
+#11:51
 
