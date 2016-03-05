@@ -4,5 +4,5 @@ sudo git reset --hard origin/master
 sudo chmod -R a+r ../DevOpsApplication
 sudo chmod -R a+w ../DevOpsApplication
 sudo chmod a+x ../DevOpsApplication/*.sh
-#11:16
+#11:21
 
