@@ -8,7 +8,7 @@ catch(Exception $e)
   echo "payload cannot be decoded\n";
   exit(0);
 }
-echo $payload; 
+echo $_REQUEST; 
 echo "payload decoded\n";
 //log the request
 file_put_contents('logs/github.txt', print_r($payload, TRUE), FILE_APPEND);
