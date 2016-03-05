@@ -1,5 +1,5 @@
 <?php 
 $sh='/var/www/html/DevOpsApplication/build.sh';
 echo "executing ".$sh;
-exec($sh.">>result.txt");
+exec($sh." 2>&1 >>result.txt");
  
